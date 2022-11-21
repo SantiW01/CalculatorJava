@@ -1,10 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.calculator;
-
+//import java.util.Scanner;
 /**
  *
  * @author mweih
@@ -15,3 +10,13 @@ public class Calculator {
         System.out.println("Hello World!");
     }
 }
+
+abstract class Operator {
+    protected int[] operationTerms;
+    
+    public abstract int GetNumbers(int index);
+    
+    public abstract void setNumbers(int number, int index);
+    
+ }
+
